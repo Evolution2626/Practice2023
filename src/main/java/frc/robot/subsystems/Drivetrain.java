@@ -28,10 +28,10 @@ public class Drivetrain extends SubsystemBase {
 
 
 public void driveTank(double joystickDroit, double joystickGauche){
-  flDriveMotor.set(joystickGauche);
-  frDriveMotor.set(joystickDroit);
-  blDriveMotor.set(joystickGauche);
-  brDriveMotor.set(joystickDroit);
+  flDriveMotor.set(Math.pow(joystickGauche, 3));
+  frDriveMotor.set(Math.pow(joystickDroit, 3));
+  blDriveMotor.set(Math.pow(joystickGauche, 3));
+  brDriveMotor.set(Math.pow(joystickDroit, 3));
 
 
 }
